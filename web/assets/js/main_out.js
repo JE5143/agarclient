@@ -630,7 +630,8 @@
         "t": false,
         "p": false,
         "q": false,
-        "escape": false
+        "escape": false,
+        "f": false
     };
 
     var eatSound = new Sound("./assets/sound/eat.mp3", 0.5, 10);
@@ -1548,7 +1549,7 @@
         }
         ctx.restore();
     }
-    function kd(event) {
+    function keydown(event) {
         var key = event.key.toLowerCase();
         if (IE_KEYS.hasOwnProperty(key)) key = IE_KEYS[key]; // IE fix
         if (key == "enter") {
@@ -1575,7 +1576,7 @@
             if (key == "q") minionControlled = !minionControlled;
         }
     }
-    function ku(event) {
+    function keyup(event) {
         var key = event.key.toLowerCase();
         if (IE_KEYS.hasOwnProperty(key)) key = IE_KEYS[key]; // IE fix
         if (pressed.hasOwnProperty(key)) pressed[key] = false;
