@@ -28,6 +28,7 @@ var canFeed = false;
 function keyDown(event) {
     var key = event.key.toLowerCase();
     console.log(event.key)
+    console.log(key)
     if (event.keyCode == 87) {
         // Feeding Macro (w)
         canFeed = true;
@@ -38,8 +39,8 @@ function keyDown(event) {
         for (var a = 0; a < 4; a++) {
             setTimeout(function() {
                 split();
-                $("body").trigger($.Event("keydown", { keyCode: 87}));
-                $("body").trigger($.Event("keyup", { keyCode: 87}));
+                $("body").trigger($.Event("keydown", { key: f}));
+                $("body").trigger($.Event("keyup", { key: f}));
             }, a * 50);
         }
     }
