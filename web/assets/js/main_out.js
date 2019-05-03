@@ -1548,7 +1548,7 @@
         }
         ctx.restore();
     }
-    function stfuhoe(event) {
+    function kd(event) {
         var key = event.key.toLowerCase();
         if (IE_KEYS.hasOwnProperty(key)) key = IE_KEYS[key]; // IE fix
         if (key == "enter") {
@@ -1575,7 +1575,7 @@
             if (key == "q") minionControlled = !minionControlled;
         }
     }
-    function stfuhoe2(event) {
+    function ku(event) {
         var key = event.key.toLowerCase();
         if (IE_KEYS.hasOwnProperty(key)) key = IE_KEYS[key]; // IE fix
         if (pressed.hasOwnProperty(key)) pressed[key] = false;
