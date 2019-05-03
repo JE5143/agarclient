@@ -1554,7 +1554,7 @@
         $("body").trigger($.Event("keyup", { keyCode: 32}));
     }
     function test() {
-        sendUint8(17);
+        console.log("test")
     }
     function keydown(event) {
         var key = event.key.toLowerCase();
@@ -1582,7 +1582,8 @@
             }, macroCooldown);
             if (key == "q") minionControlled = !minionControlled;
             if (key == "f") {
-                test();
+                split();
+                console.log("Testsplit")
             }
         }
     }
