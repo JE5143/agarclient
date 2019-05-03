@@ -1582,13 +1582,7 @@
             }, macroCooldown);
             if (key == "q") minionControlled = !minionControlled;
             if (key == "f") {
-                for (var a = 0; a < 4; a++) {
-                    setTimeout(function() {
-                           split();
-                           $("body").trigger($.Event("keydown", { keyCode: 87}));
-                           $("body").trigger($.Event("keyup", { keyCode: 87}));
-                    }, a * 50);
-                }
+                test();
             }
         }
     }
