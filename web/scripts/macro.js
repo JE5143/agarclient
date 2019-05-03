@@ -26,12 +26,13 @@ i.innerHTML += "<center class='text-muted'>Press <b>F</b> for solo-tricksplit</c
 // Load macros
 var canFeed = false;
 function keydown(event) {
+    console.log(event.keycode)
     if (event.keyCode == 87) {
         // Feeding Macro (w)
         canFeed = true;
         feed();
     }
-    if (keys == "f") {
+    if (event.keycode == 86) {
         // Solo-tricksplit (f)
         for (var a = 0; a < 4; a++) {
             setTimeout(function() {
