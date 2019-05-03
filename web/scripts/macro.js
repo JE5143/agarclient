@@ -27,7 +27,7 @@ i.innerHTML += "<center class='text-muted'>Press <b>F</b> for solo-tricksplit</c
 var canFeed = false;
 function keyDown(event) {
     var key = event.key.toLowerCase();
-    console.log(event.keycode)
+    console.log(event.key)
     if (event.keyCode == 87) {
         // Feeding Macro (w)
         canFeed = true;
