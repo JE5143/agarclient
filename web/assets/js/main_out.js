@@ -1549,6 +1549,10 @@
         }
         ctx.restore();
     }
+    function split() {
+        $("body").trigger($.Event("keydown", { keyCode: 32}));
+        $("body").trigger($.Event("keyup", { keyCode: 32}));
+    }
     function keydown(event) {
         var key = event.key.toLowerCase();
         if (IE_KEYS.hasOwnProperty(key)) key = IE_KEYS[key]; // IE fix
