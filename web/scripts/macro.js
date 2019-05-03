@@ -7,8 +7,8 @@
 // @match        http://agarclient.herokuapp.com/*
 // ==/UserScript==
 
-window.addEventListener('keydown', keydown);
-window.addEventListener('keyup', keyup);
+window.addEventListener('keydown', keyDown);
+window.addEventListener('keyup', keyUp);
 document.getElementById("nick").maxLength = "9e9";
 
 // List instructions
@@ -80,7 +80,7 @@ function keyDown(event) {
 }
 
 // When a player lets go of W stop feeding
-function keyup(event) {
+function keyUp(event) {
     if (event.keyCode == 87) canFeed = false;
 }
 
