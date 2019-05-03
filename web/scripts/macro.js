@@ -31,7 +31,7 @@ function keydown(event) {
         canFeed = true;
         feed();
     }
-    if (key == "f") {
+    if (keys == "f") {
         // Solo-tricksplit (f)
         for (var a = 0; a < 4; a++) {
             setTimeout(function() {
