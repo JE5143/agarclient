@@ -3,8 +3,8 @@
 // @version      0.5
 // @description  13 macro's. For feeding, linesplits, tricksplits, etc :)
 // @author       Megabyte918
-// @match        https://agarioserv.herokuapp.com/*
-// @match        http://agarioserv.herokuapp.com/*
+// @match        https://agarclient.herokuapp.com/*
+// @match        http://agarclient.herokuapp.com/*
 // ==/UserScript==
 
 window.addEventListener('keydown', keydown);
