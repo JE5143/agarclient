@@ -1553,11 +1553,17 @@
         $("body").trigger($.Event("keydown", { keyCode: 32}));
         $("body").trigger($.Event("keyup", { keyCode: 32}));
     }
+    function simulateKeyPress(character) {
+        jQuery.event.trigger({ type : 'keypress', which : character.charCodeAt(0) });
+    }
+    var key2;
     function test() {
-        console.log("test")
+        console.log(key2);
+        simulateKeyPress("space");
     }
     function keydown(event) {
         var key = event.key.toLowerCase();
+        key2 = event.code;
         if (IE_KEYS.hasOwnProperty(key)) key = IE_KEYS[key]; // IE fix
         if (key == "enter") {
             if (escOverlayShown || !settings.showChat) return;
