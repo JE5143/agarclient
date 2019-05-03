@@ -1574,7 +1574,7 @@
                 wsSend(code);
             }, macroCooldown);
             if (key == "q") minionControlled = !minionControlled;
-            if (key == "f");{
+            if (key == "f") {
                 for (var a = 0; a < 4; a++) {
                     setTimeout(function() {
                            split();
